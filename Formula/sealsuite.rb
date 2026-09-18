@@ -4,8 +4,8 @@
 class Sealsuite < Formula
   desc "VPN client with userspace SOCKS5 mode"
   homepage "https://github.com/ora302/homebrew-sealsuite"
-  url "https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.4/SealSuite-CLI-v1.9.4-macos-arm64.tar.xz"
-  sha256 "ce916d78554c6adaaa120012c0db690b2318063a921585ddf9e918419421dc89"
+  url "https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.5/SealSuite-CLI-v1.9.5-macos-arm64.tar.xz"
+  sha256 "d62448308313dc204fb2d2f019affd16a5f003553cecf0f43bb9749eccf1eea2"
 
   depends_on arch: :arm64
   depends_on :macos

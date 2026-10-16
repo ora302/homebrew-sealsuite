@@ -47,9 +47,9 @@ Service logs:
 
 ## Latest release
 
-Latest version: `v1.9.6`
+Latest version: `v1.9.7`
 
-Release page: https://github.com/ora302/homebrew-sealsuite/releases/tag/v1.9.6
+Release page: https://github.com/ora302/homebrew-sealsuite/releases/tag/v1.9.7
 
 All releases: https://github.com/ora302/homebrew-sealsuite/releases
 
@@ -61,24 +61,24 @@ Choose the GUI package for the desktop app. Choose the CLI package for terminal 
 
 | Platform | CPU | Asset |
 | --- | --- | --- |
-| Linux | amd64 | [`SealSuite-GUI-v1.9.6-linux-amd64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.6/SealSuite-GUI-v1.9.6-linux-amd64.tar.xz) |
-| macOS | Apple Silicon | [`SealSuite-GUI-v1.9.6-macos-arm64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.6/SealSuite-GUI-v1.9.6-macos-arm64.tar.xz) |
-| Windows | amd64 | [`SealSuite-GUI-v1.9.6-windows-amd64.zip`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.6/SealSuite-GUI-v1.9.6-windows-amd64.zip) |
+| Linux | amd64 | [`SealSuite-GUI-v1.9.7-linux-amd64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.7/SealSuite-GUI-v1.9.7-linux-amd64.tar.xz) |
+| macOS | Apple Silicon | [`SealSuite-GUI-v1.9.7-macos-arm64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.7/SealSuite-GUI-v1.9.7-macos-arm64.tar.xz) |
+| Windows | amd64 | [`SealSuite-GUI-v1.9.7-windows-amd64.zip`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.7/SealSuite-GUI-v1.9.7-windows-amd64.zip) |
 
 ### CLI packages
 
 | Platform | CPU | Asset |
 | --- | --- | --- |
-| Linux | amd64 | [`SealSuite-CLI-v1.9.6-linux-amd64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.6/SealSuite-CLI-v1.9.6-linux-amd64.tar.xz) |
-| macOS | Apple Silicon | [`SealSuite-CLI-v1.9.6-macos-arm64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.6/SealSuite-CLI-v1.9.6-macos-arm64.tar.xz) |
-| Windows | amd64 | [`SealSuite-CLI-v1.9.6-windows-amd64.zip`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.6/SealSuite-CLI-v1.9.6-windows-amd64.zip) |
+| Linux | amd64 | [`SealSuite-CLI-v1.9.7-linux-amd64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.7/SealSuite-CLI-v1.9.7-linux-amd64.tar.xz) |
+| macOS | Apple Silicon | [`SealSuite-CLI-v1.9.7-macos-arm64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.7/SealSuite-CLI-v1.9.7-macos-arm64.tar.xz) |
+| Windows | amd64 | [`SealSuite-CLI-v1.9.7-windows-amd64.zip`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.7/SealSuite-CLI-v1.9.7-windows-amd64.zip) |
 
 ### Arch Linux package
 
 | Package | Asset |
 | --- | --- |
-| Runtime package | [`sealsuite-1.9.6-1-x86_64.pkg.tar.zst`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.6/sealsuite-1.9.6-1-x86_64.pkg.tar.zst) |
-| Debug package | [`sealsuite-debug-1.9.6-1-x86_64.pkg.tar.zst`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.6/sealsuite-debug-1.9.6-1-x86_64.pkg.tar.zst) |
+| Runtime package | [`sealsuite-1.9.7-1-x86_64.pkg.tar.zst`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.7/sealsuite-1.9.7-1-x86_64.pkg.tar.zst) |
+| Debug package | [`sealsuite-debug-1.9.7-1-x86_64.pkg.tar.zst`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.7/sealsuite-debug-1.9.7-1-x86_64.pkg.tar.zst) |
 
 ## Run SealSuite
 
@@ -138,6 +138,8 @@ Useful optional fields:
 | `vpn_allowed_routes` | `null` | Optional CIDR allowlist intersected with server routes before WireGuard allowed IPs and OS route setup. Empty list means no VPN routes. |
 | `vpn_disallowed_routes` | `null` | CIDR routes carved out of WireGuard allowed IPs and OS route setup. |
 | `force_protocol` | `null` | Optional WireGuard transport override. Use `udp` or `tcp`; unset follows supported server `protocol_mode` values (`0`/`2` as UDP, `1` as TCP). Unsupported protocol modes are skipped or rejected. |
+| `account_type` | `userid` | Account type sent by the `feilian_v1` login flow. Deployments using another account type can override this value. |
+| `poll_tps_auth` | `false` | Polls third-party QR authentication every 5 seconds for up to 180 seconds. Useful for unattended CLI, systemd, and container runs. |
 | `verify_tls` | `true` | TLS certificate verification. |
 | `debug_wg` | `false` | Enables verbose WireGuard logs. |
 | `state` | `null` | Login state cache. Set to `Init` to force a fresh login. |
@@ -160,6 +162,8 @@ Environment variables override selected config values:
 On first login, SealSuite may ask for QR-based third-party authentication. The GUI shows a QR dialog. The CLI prints an ASCII QR code and login URL.
 
 After a TOTP secret is saved into `code`, later VPN connections generate 2FA codes automatically.
+
+Set `poll_tps_auth` to `true` to complete supported third-party QR authentication without pressing Enter.
 
 ## DNS
 

@@ -47,9 +47,9 @@ Service logs:
 
 ## Latest release
 
-Latest version: `v1.9.10`
+Latest version: `v1.9.13`
 
-Release page: https://github.com/ora302/homebrew-sealsuite/releases/tag/v1.9.10
+Release page: https://github.com/ora302/homebrew-sealsuite/releases/tag/v1.9.13
 
 All releases: https://github.com/ora302/homebrew-sealsuite/releases
 
@@ -61,24 +61,24 @@ Choose the GUI package for the desktop app. Choose the CLI package for terminal 
 
 | Platform | CPU | Asset |
 | --- | --- | --- |
-| Linux | amd64 | [`SealSuite-GUI-v1.9.10-linux-amd64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.10/SealSuite-GUI-v1.9.10-linux-amd64.tar.xz) |
-| macOS | Apple Silicon | [`SealSuite-GUI-v1.9.10-macos-arm64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.10/SealSuite-GUI-v1.9.10-macos-arm64.tar.xz) |
-| Windows | amd64 | [`SealSuite-GUI-v1.9.10-windows-amd64.zip`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.10/SealSuite-GUI-v1.9.10-windows-amd64.zip) |
+| Linux | amd64 | [`SealSuite-GUI-v1.9.13-linux-amd64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.13/SealSuite-GUI-v1.9.13-linux-amd64.tar.xz) |
+| macOS | Apple Silicon | [`SealSuite-GUI-v1.9.13-macos-arm64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.13/SealSuite-GUI-v1.9.13-macos-arm64.tar.xz) |
+| Windows | amd64 | [`SealSuite-GUI-v1.9.13-windows-amd64.zip`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.13/SealSuite-GUI-v1.9.13-windows-amd64.zip) |
 
 ### CLI packages
 
 | Platform | CPU | Asset |
 | --- | --- | --- |
-| Linux | amd64 | [`SealSuite-CLI-v1.9.10-linux-amd64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.10/SealSuite-CLI-v1.9.10-linux-amd64.tar.xz) |
-| macOS | Apple Silicon | [`SealSuite-CLI-v1.9.10-macos-arm64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.10/SealSuite-CLI-v1.9.10-macos-arm64.tar.xz) |
-| Windows | amd64 | [`SealSuite-CLI-v1.9.10-windows-amd64.zip`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.10/SealSuite-CLI-v1.9.10-windows-amd64.zip) |
+| Linux | amd64 | [`SealSuite-CLI-v1.9.13-linux-amd64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.13/SealSuite-CLI-v1.9.13-linux-amd64.tar.xz) |
+| macOS | Apple Silicon | [`SealSuite-CLI-v1.9.13-macos-arm64.tar.xz`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.13/SealSuite-CLI-v1.9.13-macos-arm64.tar.xz) |
+| Windows | amd64 | [`SealSuite-CLI-v1.9.13-windows-amd64.zip`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.13/SealSuite-CLI-v1.9.13-windows-amd64.zip) |
 
 ### Arch Linux package
 
 | Package | Asset |
 | --- | --- |
-| Runtime package | [`sealsuite-1.9.10-1-x86_64.pkg.tar.zst`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.10/sealsuite-1.9.10-1-x86_64.pkg.tar.zst) |
-| Debug package | [`sealsuite-debug-1.9.10-1-x86_64.pkg.tar.zst`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.10/sealsuite-debug-1.9.10-1-x86_64.pkg.tar.zst) |
+| Runtime package | [`sealsuite-1.9.13-1-x86_64.pkg.tar.zst`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.13/sealsuite-1.9.13-1-x86_64.pkg.tar.zst) |
+| Debug package | [`sealsuite-debug-1.9.13-1-x86_64.pkg.tar.zst`](https://github.com/ora302/homebrew-sealsuite/releases/download/v1.9.13/sealsuite-debug-1.9.13-1-x86_64.pkg.tar.zst) |
 
 ## Run SealSuite
 
